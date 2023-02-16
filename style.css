@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0;
+    list-style: none;
+}
+.container {
+    max-width: 1100px;
+    background-color: rgb(67, 63, 63);
+    margin: 10px auto;
+    padding: 40px;
+}
+.card {
+    width: 300px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: -11px 10px 3px rgb(33, 32, 32);
+    transition: all 1.4s;
+}
+.card:hover{
+    box-shadow: 11px 10px 3px rgb(33, 32, 32);
+}
+.card__header {
+    position: relative;
+    height: 250px;
+    width: 300px;
+    background: linear-gradient(to right, rgb(249, 96, 45), rgb(248, 21, 21));
+    border-radius: 30px 30px 0 0;
+}
+.card__footer {
+    height: 160px;
+    width: 300px;
+    border-radius: 0px 0px 30px 30px;
+    padding: 25px;
+    position: relative;
+}
+.card_footer-sc {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    margin-top: 7px;
+}
+.card__footer-title {
+    display: flex;
+    align-items: center;
+}
+.footer_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-new {
+    background-color: rgb(84, 254, 54);
+    padding: 2px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    margin-left: 10px;
+}
+.footer__star {
+    display: flex;
+}
+.nike {
+    width: 60px;
+}
+.header__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header__text {
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header__info {
+    color: #fff;
+    padding: 10px 25px 10px 25px;
+}
+.header__img {
+}
+.fa-solid{
+    margin: 3px;
+}
+.foot-img {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    z-index: 2;
+    transition: 1.4s;
+}
+.foot__img-shadow {
+    width: 150px;
+    height: 55px;
+    box-shadow: 0 70px 30px rgb(0, 0, 0, 0.518);
+    position: absolute;
+    left: 60%;
+    top: 51%;
+    border-radius: 0px 0 200px 200px;
+    transform: rotate(30deg);
+    transition: 0.4;
+}
+.card:hover .foot__img-shadow {
+    left: 55%;
+    top: 47%;
+    animation: shadow 1s cubic-bezier(0.445, 0.03, 0.515, 0.955) infinite alternate-reverse;
+}
+
+.fast {
+    font-size: 112px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    bottom: -13%;
+    left: -2%;
+    pointer-events: none;
+    color: rgb(0, 0, 0, 0.112);
+    z-index: 1;
+}
+.footer__colection {
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
+.card:hover .foot-img {
+    animation: animation 1s cubic-bezier(0.445, 0.03, 0.515, 0.955) infinite alternate-reverse;
+}
+@keyframes animation {
+    0%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(-7deg);
+    }
+}
+
+@keyframes shadow{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.card_footer-numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 70px 5px 0;
+}
+.number {
+    border-radius: 50%;
+    font-size: 13px;
+    background-color: rgb(0, 0, 0, 0.044);
+    padding: 3px 7px 3px 7px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.number:hover {
+    background-color: rgb(0, 0, 0, 0.166);
+}
+.number-red {
+    border-radius: 50%;
+    padding: 3px 5px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(255, 63, 63);
+}
+.card_footer-colour {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    margin-top: 7px;
+    padding-left: 20px;
+}
+.card__footer-colour {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    
+}
+.color-admin {
+    border: 2px solid rgb(0, 0, 0, 0.285);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.color-1{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(255, 66, 66);
+}
+.color-2{
+    margin-right: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(84, 254, 54);
+    position: relative;
+}
+.color-2:hover::after {
+    content: '';
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0, 0.285);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+}
+.color-3{
+    background-color: rgb(255, 243, 9);
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+}
+.color-3:hover::after {
+    content: '';
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0, 0.285);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: -6.2px;
+    top: -7px;
+}
+.card__price {
+    background-color: rgb(84, 254, 54);
+    position: absolute;
+    left: 50%;
+    font-size: 31px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+}
+.card__price span {
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255, 0.775);
+    font-size: 27px;
+    margin-right: 5px;
+}
+.card__price:hover {
+    background-color: rgb(51, 151, 33);
+    cursor: pointer;
+} 
+
+/* .conteiner {
+    display: flex;
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    background-color: chartreuse;
+    border-radius: 15px;
+}
+i {
+    display: flex;
+    font-size: 40px;
+    display: flex;
+}
+.one {
+    display: flex;
+}
+.two {
+    display: flex;
+    justify-self: flex-end;
+}
+.three {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+.four {
+
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.card {
+    background-color: rgb(255, 242, 55);
+    width: 450px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 30px;
+}
+.card__body {
+    background-color: rgb(255, 220, 105);
+    padding: 5px 0;
+}
+.cart__rarity {
+    margin-left: 25px;
+}
+.card__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+}
+.card__name {
+}
+.card__hp {
+    display: flex;
+}
+.hp {
+    margin: 0.5px;
+}
+.fa-sharp {
+    background-color: darkorange;
+    padding: 5px 6px;
+    border-radius: 50%;
+    box-shadow: inset -2px 0 10px black, inset 2px 2px 5px #fff  ;
+}
+.fa-solid {
+}
+.fa-bolt {
+}
+.card__img {
+}
+.pikachu {
+    width: 300px;
+
+}
+.pikachu__info {
+}
